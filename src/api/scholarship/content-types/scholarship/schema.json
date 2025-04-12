@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "scholarships",
+  "info": {
+    "singularName": "scholarship",
+    "pluralName": "scholarships",
+    "displayName": "scholarship",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "deadline": {
+      "type": "date",
+      "required": true
+    },
+    "link": {
+      "type": "string"
+    },
+    "isPublished": {
+      "type": "boolean",
+      "required": true
+    },
+    "amount": {
+      "type": "biginteger"
+    },
+    "country": {
+      "type": "blocks",
+      "required": true
+    },
+    "eligibility": {
+      "type": "blocks"
+    },
+    "applyLink": {
+      "type": "string"
+    },
+    "level": {
+      "type": "enumeration",
+      "enum": [
+        "- High School",
+        "- Undergraduate",
+        "- Masters",
+        "- PhD"
+      ]
+    },
+    "category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::category.category"
+    }
+  }
+}
