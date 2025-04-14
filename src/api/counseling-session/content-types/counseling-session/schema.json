@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "counseling_sessions",
+  "info": {
+    "singularName": "counseling-session",
+    "pluralName": "counseling-sessions",
+    "displayName": "counseling-session"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "blocks",
+      "required": true
+    },
+    "price": {
+      "type": "biginteger"
+    },
+    "booking_link": {
+      "type": "string"
+    },
+    "is_active": {
+      "type": "boolean"
+    }
+  }
+}

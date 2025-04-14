@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contacts",
+  "info": {
+    "singularName": "contact",
+    "pluralName": "contacts",
+    "displayName": "contact"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "full_name": {
+      "type": "string",
+      "required": true
+    },
+    "message": {
+      "type": "blocks",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "submittedat": {
+      "type": "datetime"
+    }
+  }
+}

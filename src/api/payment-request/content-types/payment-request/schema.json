@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "payment_requests",
+  "info": {
+    "singularName": "payment-request",
+    "pluralName": "payment-requests",
+    "displayName": "payment-request"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "full_name": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email"
+    },
+    "payment_type": {
+      "type": "enumeration",
+      "enum": [
+        " Tuition, ",
+        "Visa, etc.)"
+      ]
+    },
+    "institution": {
+      "type": "string"
+    },
+    "amount": {
+      "type": "biginteger"
+    },
+    "paymentstatus": {
+      "type": "enumeration",
+      "enum": [
+        "Pending, ",
+        "Completed"
+      ]
+    },
+    "confirmation_receipt_url": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": true
+    },
+    "createdat": {
+      "type": "datetime"
+    }
+  }
+}
